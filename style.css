@@ -40,32 +40,55 @@ body {
 	font-size: 6em;
 	font-family: 'Exo', sans-serif;
 	text-align: center;
+	color: #20a0ff;
 }
 
 #subtitle {
 	font-size: 2em;
 	text-align: center;
+	color: #20ff60;
+	text-decoration: none;
+	font-weight:normal;
+}
+
+#button_box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#top_buttons {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	flex-grow: 1;
+	flex-basis: 0;
 }
 
 .button
 {
-    background: #004040;
-    border-color: #0080ff;
-    color: #00ff80;
+	font-weight:normal; 
+	flex-grow: 1;
+	flex-basis: 0;
+    background: rgba(0, 0, 0, 0.3);
+    color: #20ff60;
     font-size: 1.5em;
-    height: 2em;
-    border: solid 4px #c2c7cc;
-    border-radius: 1em;
+    border-radius: 0.5em;
     text-decoration: none;
+	font-weight:normal;
+    margin: 20px;
+	padding: 5px 10px 5px 10px;
+	
     /*
     transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
 	*/
-	transition: font-size 0.2s ease-in-out;
+	transition: font-size 0.2s ease-in-out, border-radius 0.2s ease-in-out;
 }
 
 .button:hover {
 	
-	background: #ffffff;
-	border: solid 4px #c2c7cc;
+	/*border: solid 1px #20ff60;*/
 	font-size: 2em;
 }
