@@ -5,13 +5,14 @@ body {
 }
 
 #main_container {
-	height: 100%;
-	width: 100%;
+	min-height: 100%;
+	min-width: 100%;
+	height: auto;
+	width: auto;
 	display: flex;
 	flex-direction: row-reverse;
 	align-items: center;
 	justify-content: center;
-	background: red; /* For browsers that do not support gradients */
     
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#10ffb7+0,0750d7+100 */
 	background: #10ffb7; /* Old browsers */
@@ -30,7 +31,7 @@ body {
 
 #image_logo {
 	float: left;
-	margin-left: -40vh;
+	margin-left: -42vh;
 	height: 100vh;
 }
 
@@ -138,7 +139,7 @@ body {
 	}
 	
 	#image_logo {
-		opacity: 0.1;
+		opacity: 0.2;
 		float: inherit;
 		margin-left: -30px;
 	}
@@ -146,7 +147,7 @@ body {
 	.button_row {
 		width: 100%;
 		display: flex;
-		flex-direction: column;
+		flex-direction: column-reverse;
 		align-items: center;
 		justify-content: center;
 		flex-grow: 0;
