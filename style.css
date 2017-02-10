@@ -93,8 +93,8 @@ body {
 	font-weight:normal; 
 	flex-grow: 1;
 	flex-basis: 0;
-    background: rgba(0, 0, 0, 0.3);
-    color: #20ff60;
+    background: rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.8);
     font-size: 1.5em;
     
     border-radius: 0.5em;
@@ -107,7 +107,7 @@ body {
     /*
     transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
 	*/
-	transition: font-size 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+	transition: font-size 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 #get_started_btn:hover {
@@ -118,4 +118,5 @@ body {
 	
 	/*border: solid 1px #20ff60;*/
 	font-size: 2em;
+	color: rgba(255, 255, 255, 1.0);
 }
