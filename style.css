@@ -8,7 +8,7 @@ body {
 	height: 100%;
 	width: 100%;
 	display: flex;
-	flex-direction: row;
+	flex-direction: row-reverse;
 	align-items: center;
 	justify-content: center;
 	background: red; /* For browsers that do not support gradients */
@@ -19,24 +19,46 @@ body {
 	background: -webkit-linear-gradient(top,  #10ffb7 0%,#0750d7 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom,  #10ffb7 0%,#0750d7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#10ffb7', endColorstr='#0750d7',GradientType=0 ); /* IE6-9 */
-
 }
 
 #big_logo {
 	width: 40%;
 	height: 100%;
+	z-index: 1;
 	/*overflow: hidden;*/
 }
 
 #image_logo {
 	float: left;
-	margin-left: -16em;
+	margin-left: -40vh;
 	height: 100%;
 }
 
 #content_div {
 	align-items: center;
 	text-align: center;
+	z-index: 4;
+}
+
+@media (max-width: 600px) {
+	
+	
+	#big_logo {
+		flex-grow: 0;
+		flex-basis: 0;
+		width: 100%;
+		display: flex;
+    	justify-content: center;
+    	position: absolute;
+    	overflow: hidden;
+	}
+	
+	
+	#image_logo {
+		opacity: 0.2;
+		float: inherit;
+		margin-left: 0;
+	}
 }
 
 #page_title {
@@ -76,35 +98,9 @@ body {
 	flex-basis: 0;
 }
 
-/*
-.button_row {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;language
-	flex-grow: 1;
-	flex-basis: 0;
-}
-*/
-
 #get_started_btn {
 	
 }
-
-/*
-.button_wrapper {
-	background: rgba(0, 0, 0, 0.2);
-	
-	height: 100%;
-	margin: 5px 10px 5px 10px;
-	border-radius: 20px;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-}
-*/
 
 .button
 {
@@ -116,7 +112,7 @@ body {
 	flex-basis: 0;
     text-decoration: none;
 	font-weight:normal;
-	margin: 5px 10px 5px 10px;
+	margin: 5px 20px 5px 20px;
 	padding: 5px;
 	border-radius: 20px;
 	border: solid 1px rgba(255, 255, 255, 0.0);
