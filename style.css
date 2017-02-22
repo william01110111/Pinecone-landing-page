@@ -1,6 +1,8 @@
 body {
 	margin: 0;
 	font-family: 'Work Sans', sans-serif;
+	height: 100vh;
+	overflow: hidden;
 	/*font-family: 'Raleway', sans-serif;*/
 }
 
@@ -25,7 +27,7 @@ body {
 #big_logo {
 	width: 40%;
 	height: 100%;
-	z-index: 1;
+	z-index: 6;
 	/*overflow: hidden;*/
 }
 
@@ -38,7 +40,8 @@ body {
 #content_div {
 	align-items: center;
 	text-align: center;
-	z-index: 4;
+	height: 100%;
+	z-index: 60;
 	padding-right: 2em;
 	padding-left: 2em;
 }
