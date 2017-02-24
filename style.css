@@ -27,6 +27,7 @@ body {
 	width: 40%;
 	height: 100%;
 	z-index: 6;
+	top: 0;
 	/*overflow: hidden;*/
 }
 
